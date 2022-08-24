@@ -10,13 +10,13 @@ function Faq() {
             </h1>
             <div class="faq-questions">
                 <details open="">
-                    <summary>What is KryptoPunks?</summary>
+                    <summary>What is TuxPunks?</summary>
                     <div class="faq__content">
-                        <p>KryptoPunks is a project within the Polygon blockchain. Based on a collection of NFTs that can be staked to receive KryptoPunk Token rewards.</p>
+                        <p>TuxPunks is a project within the Polygon blockchain. Based on a collection of NFTs that can be staked to receive TuxPunk Token rewards.</p>
                     </div>
                 </details>
                 <details>
-                    <summary>When can i buy a kryptoPunk?</summary>
+                    <summary>When can i buy a TuxPunk?</summary>
                     <div class="faq__content">
                         <p>The NFTs release date is September 23 at 19:00 UTC. Follow our official channels to find out the latest news.</p>
                     </div>
@@ -35,7 +35,7 @@ function Faq() {
                 <details>
                     <summary>Where can I stake my nft?</summary>
                     <div class="faq__content">
-                        <p>You can stake your KryptoPunks directly from our app in the mint page where you can als manage your whole wallet of NFTs.</p>
+                        <p>You can stake your TuxPunks directly from our app in the mint page where you can als manage your whole wallet of NFTs.</p>
                     </div>
                 </details>
             </div>

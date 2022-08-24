@@ -10,7 +10,7 @@ import { Table } from "react-bootstrap";
 import { CircularProgress } from "@mui/material"
 
 import stakingContract from "../artifacts/NFTStakingVault.sol/NFTStakingVault.json";
-import nftContract from "../artifacts/KryptoPunks.sol/KryptoPunks.json";
+import nftContract from "../artifacts/TuxPunks.sol/TuxPunks.json";
 import { stakingContractAddress, nftContractAddress, ownerAddress, networkDeployedTo } from "../utils/contracts-config";
 import networksMap from "../utils/networksMap.json";
 
@@ -67,11 +67,11 @@ function MintPage() {
 
             const _userNfts = await Promise.all(userTokens.map(async (nft) => {
                 const metadata = await axios.get(
-                    baseURI.replace("ipfs://", "https://ipfs.io/ipfs/") + "/" + nft.toString() + baseExtension
+                    baseURI.replace("ipfs://", "https://ipfs.8api.sh/ipfs/") + "/" + nft.toString() + baseExtension
                 )
                 return {
                     id: nft,
-                    uri: metadata.data.image.replace("ipfs://", "https://ipfs.io/ipfs/")
+                    uri: metadata.data.image.replace("ipfs://", "https://ipfs.8api.sh/ipfs/")
                 }
             }))
 
@@ -233,7 +233,7 @@ function MintPage() {
                         <Table responsive>
                             <tbody>
                                 <tr>
-                                    <td className='p-2'>Your KryptoPunks </td>
+                                    <td className='p-2'>Your TuxPunks </td>
                                     <td>[{info.userNftIds.join(" ")}]</td>
                                 </tr>
                                 <tr>
@@ -270,10 +270,10 @@ function MintPage() {
                             <div className="col-md-7">
                                 <div className="text-center">
                                     <h2 className="minttitle title">
-                                        Claim Your KryptoPunk
+                                        Claim Your TuxPunk
                                     </h2>
                                     <img src={image1} className="mint-img" alt="" />
-                                    <p className="lead" style={{ marginBottom: "30px" }}>A KryptoPunk is a character that is part of an 10000 algorithmically generated collection consisting of extremely unique features ranging from faces, eyes, mouths, skins, hats, and backgrounds.</p>
+                                    <p className="lead" style={{ marginBottom: "30px" }}>A TuxPunk is a character that is part of an 10000 algorithmically generated collection consisting of extremely unique features ranging from faces, eyes, mouths, skins, hats, and backgrounds.</p>
                                     <div className="form-group" >
                                         <div className="d-flex justify-content-center">
                                             <button type="button"
@@ -301,7 +301,7 @@ function MintPage() {
             <section className='my-items'>
                 {userNfts.length !== 0 ? (
                     <>
-                        <h2 className="minttitle title text-center">My KryptoPunks</h2>
+                        <h2 className="minttitle title text-center">My TuxPunks</h2>
                         <div className='items container'>
                             {userNfts.map((nft, index) => {
                                 return (

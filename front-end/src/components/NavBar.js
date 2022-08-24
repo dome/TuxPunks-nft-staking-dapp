@@ -13,7 +13,7 @@ function NavBar() {
         <header className="header">
             <div className="brand">
                 <a href="/" className="brand-logo">
-                    KryptoPunks
+                    TuxPunks
                 </a>
                 <div className="nav-burger" id="nav-burger">
                     <img src={menu} alt="Menu" onClick={() => {

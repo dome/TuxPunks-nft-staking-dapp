@@ -2,8 +2,8 @@
 
 pragma solidity 0.8.7;
 
-import "./interfaces/IKryptoPunks.sol";
-import "./interfaces/IKryptoPunksToken.sol";
+import "./interfaces/ITuxPunks.sol";
+import "./interfaces/ITuxPunksToken.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
@@ -13,8 +13,8 @@ contract NFTStakingVault is Ownable, IERC721Receiver {
 
     uint256 public totalItemsStaked;
 
-    IKryptoPunks nft;
-    IKryptoPunksToken token;
+    ITuxPunks nft;
+    ITuxPunksToken token;
 
     struct Stake {
         address owner;
@@ -40,8 +40,8 @@ contract NFTStakingVault is Ownable, IERC721Receiver {
     // CONSTRUCTOR
 
     constructor(address _nftAddress, address _tokenAddress) {
-        nft = IKryptoPunks(_nftAddress);
-        token = IKryptoPunksToken(_tokenAddress);
+        nft = ITuxPunks(_nftAddress);
+        token = ITuxPunksToken(_tokenAddress);
     }
 
     //--------------------------------------------------------------------

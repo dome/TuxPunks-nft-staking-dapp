@@ -12,17 +12,17 @@ async function main() {
   const mintCost = getAmountInWei(0.01)
   const maxMintAmount = 5
 
-  // Deploy KryptoPunks NFT contract 
-  const NFTContract = await ethers.getContractFactory("KryptoPunks");
+  // Deploy TuxPunks NFT contract 
+  const NFTContract = await ethers.getContractFactory("TuxPunks");
   const nftContract = await NFTContract.deploy(maxSupply, mintCost, maxMintAmount);
 
   await nftContract.deployed();
 
-  const set_tx = await nftContract.setBaseURI("ipfs/test-uri")
+  const set_tx = await nftContract.setBaseURI("ipfs://QmciBxDYVTQgxwRiMBNDyCw2gFPuFqrz5YxJaNkZBRznwW/")
   await set_tx.wait()
 
-  // Deploy KryptoPunks ERC20 token contract 
-  const TokenContract = await ethers.getContractFactory("KryptoPunksToken");
+  // Deploy TuxPunks ERC20 token contract 
+  const TokenContract = await ethers.getContractFactory("TuxPunksToken");
   const tokenContract = await TokenContract.deploy();
 
   await tokenContract.deployed();
@@ -36,8 +36,8 @@ async function main() {
   const control_tx = await tokenContract.setController(stakingVault.address, true)
   await control_tx.wait()
 
-  console.log("KryptoPunks NFT contract deployed at:\n", nftContract.address);
-  console.log("KryptoPunks ERC20 token contract deployed at:\n", tokenContract.address);
+  console.log("TuxPunks NFT contract deployed at:\n", nftContract.address);
+  console.log("TuxPunks ERC20 token contract deployed at:\n", tokenContract.address);
   console.log("NFT Staking Vault deployed at:\n", stakingVault.address);
   console.log("Network deployed to :\n", deployNetwork);
 

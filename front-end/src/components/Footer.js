@@ -5,7 +5,7 @@ import { RiDiscordFill } from "react-icons/ri";
 function Footer() {
     return (
         <div className='footer container'>
-            <p>KryptoPunks&#169; All Right Reserved</p>
+            <p>TuxPunks&#169; All Right Reserved</p>
             <div className='social'>
                 <a href='https://github.com/Aymen1001' >
                     <AiOutlineGithub size={24} color="#000" />

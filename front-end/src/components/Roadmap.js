@@ -27,7 +27,7 @@ function Roadmap() {
                         </div>
                         <div className="body">
                             <p>Phase 2</p>
-                            <p>Start the KryptoPunks Staking</p>
+                            <p>Start the TuxPunks Staking</p>
                         </div>
                     </div>
                     <div className="entry">
@@ -36,7 +36,7 @@ function Roadmap() {
                         </div>
                         <div className="body">
                             <p>Phase 3</p>
-                            <p>Create more tokenomics around the KryptoPunks token</p>
+                            <p>Create more tokenomics around the TuxPunks token</p>
                         </div>
                     </div>
                     <div className="entry">

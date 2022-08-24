@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "IKryptoPunks",
-  "sourceName": "contracts/interfaces/IKryptoPunks.sol",
+  "contractName": "ITuxPunks",
+  "sourceName": "contracts/interfaces/ITuxPunks.sol",
   "abi": [
     {
       "inputs": [

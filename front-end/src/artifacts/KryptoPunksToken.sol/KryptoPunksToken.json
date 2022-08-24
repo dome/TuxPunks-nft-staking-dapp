@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "KryptoPunksToken",
-  "sourceName": "contracts/KryptoPunksToken.sol",
+  "contractName": "TuxPunksToken",
+  "sourceName": "contracts/TuxPunksToken.sol",
   "abi": [
     {
       "inputs": [],
@@ -10,7 +10,7 @@
     },
     {
       "inputs": [],
-      "name": "KryptoPunksToken__OnlyControllersCanMint",
+      "name": "TuxPunksToken__OnlyControllersCanMint",
       "type": "error"
     },
     {

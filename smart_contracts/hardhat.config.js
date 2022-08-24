@@ -47,11 +47,16 @@ module.exports = {
     //   accounts: [process.env.PRIVATE_KEY],
     //   chainId: 4,
     // }
-    // mumbai: {
-    //   url: MUMBAI_RPC_URL,
-    //   accounts: [process.env.PRIVATE_KEY],
-    //   chainId: 80001,
-    // },
+    'jfin-testnet': {
+      url: 'https://rpc.testnet.jfinchain.com',
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 3502,
+   },
+    mumbai: {
+       url: MUMBAI_RPC_URL,
+       accounts: [process.env.PRIVATE_KEY],
+       chainId: 80001,
+    },
     // polygon: {
     //   url: POLYGON_RPC_URL,
     //   accounts: [process.env.PRIVATE_KEY],
@@ -67,6 +72,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       rinkeby: RINKEBY_ETHERSCAN_API_KEY,
+      polygonMumbai: RINKEBY_ETHERSCAN_API_KEY,
     }
   }
 };
